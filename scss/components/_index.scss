@@ -1,0 +1,62 @@
+.title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: $main_color;
+
+  &-border {
+    padding-bottom: 7px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 253px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      background-color: $second_color;
+    }
+  }
+}
+
+.link {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  color: $second_color;
+  text-transform: uppercase;
+  width: max-content;
+
+  svg {
+    margin-left: 26px;
+
+    path {
+      fill: $second_color;
+    }
+  }
+}
+
+.btn {
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $second_color;
+
+  &-large {
+    padding: 15px 39px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &-small {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 19px;
+  }
+}
+
+.text {
+  color: $main_color;
+  line-height: 24px;
+}

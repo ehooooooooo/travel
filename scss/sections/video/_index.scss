@@ -1,0 +1,16 @@
+.video {
+  height: 609px;
+  background-image: url("../img/video/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  &-btn {
+    display: grid;
+    justify-self: center;
+    width: max-content;
+  }
+}

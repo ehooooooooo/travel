@@ -1,0 +1,36 @@
+.benefits {
+  margin-top: -226px;
+  margin-bottom: 130px;
+  padding: 90px 100px 110px;
+  background-color: $white;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+
+  .title {
+    margin-bottom: 120px;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 60px;
+  }
+
+  &-item {
+    &__icon {
+      width: 66px;
+      height: auto;
+      margin-bottom: 37px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 26px;
+    }
+
+    &__description {
+      line-height: 24px;
+      margin-bottom: 39px;
+    }
+  }
+}

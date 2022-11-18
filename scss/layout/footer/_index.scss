@@ -1,0 +1,48 @@
+.footer {
+  background-color: #0e1d28;
+
+  .container {
+    display: grid;
+    padding: 120px 20px 120px 105px;
+    grid-template-columns: 2fr max-content;
+  }
+
+  &-logo {
+    width: max-content;
+    height: max-content;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 140px;
+  }
+
+  &-item {
+    display: grid;
+    width: max-content;
+
+    * {
+      color: $white;
+    }
+
+    &__title,
+    &__link {
+      line-height: 24px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 3px;
+    }
+
+    &__link {
+      font-size: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
